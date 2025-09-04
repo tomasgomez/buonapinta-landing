@@ -1,0 +1,25 @@
+{
+  "name": "buonapinta-landing",
+  "version": "1.0.0",
+  "description": "Landing page estática para BUONA PINTA Barber Truck",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - serve index.html'",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "barberia",
+    "reservas",
+    "concon",
+    "chile",
+    "landing-page"
+  ],
+  "author": "BUONA PINTA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/buonapinta-landing.git"
+  },
+  "homepage": "https://www.buonapinta.cl"
+}
