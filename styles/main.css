@@ -1,12 +1,12 @@
 /* ===== BUONA PINTA LANDING PAGE STYLES ===== */
 
 :root {
-    --white-bg: #FFFFFF;
+    --white-bg: #FFF;
     --light-grey: #F8F8F8;
     --ocean-aqua: #20B2AA;
     --sunset-coral: #FF6F61;
-    --text-dark: #333333;
-    --text-light: #666666;
+    --text-dark: #333;
+    --text-light: #666;
     --border-light: #E0E0E0;
 }
 
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     background: linear-gradient(to bottom right, #F9F9F9, #F0F0F0);
     color: var(--text-dark);
     line-height: 1.6;
@@ -65,7 +65,7 @@ body {
 .hero h1 { 
     margin: 0 0 8px; 
     font-size: clamp(28px, 4.2vw, 48px); 
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: var(--text-dark);
 }
@@ -134,10 +134,11 @@ body {
     grid-template-columns: 1fr; 
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .grid-3 { 
         grid-template-columns: repeat(3, 1fr); 
     }
+
     .grid-2 { 
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -154,11 +155,11 @@ body {
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 12px rgb(0 0 0 / 7%);
 }
 
 .card h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: var(--text-dark);
     margin: 0 0 8px;
@@ -201,7 +202,7 @@ body {
 
 /* Section headings */
 .section h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: var(--text-dark);
     font-size: 2em;
@@ -238,7 +239,7 @@ details p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .container {
         padding: 16px;
     }

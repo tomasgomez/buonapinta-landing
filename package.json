@@ -6,7 +6,11 @@
   "scripts": {
     "build": "echo 'Static site - no build needed'",
     "start": "echo 'Static site - serve index.html'",
-    "dev": "python3 -m http.server 8000"
+    "dev": "python3 -m http.server 8000",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "htmlhint *.html",
+    "lint:css": "stylelint styles/*.css",
+    "lint:fix": "npm run lint:css -- --fix"
   },
   "keywords": [
     "barberia",
@@ -21,5 +25,10 @@
     "type": "git",
     "url": "https://github.com/tu-usuario/buonapinta-landing.git"
   },
-  "homepage": "https://www.buonapinta.cl"
+  "homepage": "https://www.buonapinta.cl",
+  "devDependencies": {
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0"
+  }
 }
