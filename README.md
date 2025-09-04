@@ -1,121 +1,121 @@
-# BUONA PINTA Landing Page - Sitio Estático
+# 🌊 **BUONA PINTA - Landing Page Estático**
 
-## 🎯 Descripción
+Landing page estático para BUONA PINTA Barber Truck. Página de aterrizaje optimizada para conversión con redirección al sistema de reservas.
 
-Landing page optimizada para conversión de BUONA PINTA Barber Truck, diseñada para ser hospedada como sitio estático en el DNS principal (www.buonapinta.cl).
+## 🎯 **Descripción**
 
-## 📁 Estructura del Proyecto
+Sitio web estático que sirve como punto de entrada principal para BUONA PINTA. Diseñado para maximizar conversiones y dirigir tráfico al sistema de reservas.
+
+## 🏗️ **Tecnologías**
+
+- **HTML5**: Estructura semántica y accesible
+- **CSS3**: Estilos modernos y responsive
+- **JavaScript**: Funcionalidad mínima y optimizada
+- **SEO**: Meta tags, Schema.org, Open Graph
+- **Performance**: Optimizado para velocidad de carga
+
+## 📁 **Estructura del Proyecto**
 
 ```
 buonapinta-landing/
-├── index.html          # Página principal
-├── 404.html           # Página de error 404
-├── robots.txt         # Instrucciones para crawlers
-├── sitemap.xml        # Mapa del sitio
-├── .htaccess          # Configuración Apache
+├── index.html              # Página principal
+├── 404.html               # Página de error 404
 ├── styles/
-│   └── main.css       # Estilos optimizados
-└── README.md          # Esta documentación
+│   └── main.css           # Estilos principales
+├── .htaccess              # Configuración Apache
+├── robots.txt             # Directivas para bots
+├── sitemap.xml            # Mapa del sitio
+├── render.yaml            # Configuración para Render.com
+├── package.json           # Dependencias y scripts
+├── .htmlhintrc            # Configuración HTML linting
+└── .stylelintrc.json      # Configuración CSS linting
 ```
 
-## 🚀 Características
+## 🚀 **Despliegue**
 
-### SEO Optimizado
-- ✅ Meta tags completos (title, description, Open Graph, Twitter)
-- ✅ Schema.org structured data (Barbershop, FAQPage)
-- ✅ Sitemap XML automático
-- ✅ Robots.txt configurado
-- ✅ Canonical URLs
+### **Render.com (Recomendado)**
+1. Crear **Static Site** en Render.com
+2. Conectar repositorio: `tomasgomez/buonapinta-landing`
+3. Build Command: `echo "Static site - no build needed"`
+4. Publish Directory: `.` (root)
+5. Desplegar
 
-### Performance
-- ✅ HTML estático (carga instantánea)
-- ✅ CSS minificado y optimizado
-- ✅ Fonts con display: swap
-- ✅ Compresión GZIP habilitada
-- ✅ Headers de cache configurados
+### **Otros Proveedores**
+- **Netlify**: Arrastrar carpeta o conectar Git
+- **Vercel**: Importar repositorio Git
+- **GitHub Pages**: Habilitar en configuración del repo
 
-### Conversión
-- ✅ CTA prominente arriba del pliegue
-- ✅ Múltiples CTAs estratégicos
-- ✅ Prueba social (testimonios)
-- ✅ FAQ para objeciones
-- ✅ Responsive design (mobile-first)
+## 🎨 **Características**
 
-## 🔗 Enlaces de Reserva
+### **Diseño**
+- ✅ **Responsive**: Funciona en móvil, tablet y desktop
+- ✅ **Moderno**: Diseño limpio y profesional
+- ✅ **Accesible**: Cumple estándares de accesibilidad
+- ✅ **Rápido**: Optimizado para velocidad
 
-Todos los enlaces de reserva apuntan a la aplicación principal:
-- **Aplicación**: `https://app.buonapinta.cl/book`
+### **SEO**
+- ✅ **Meta tags**: Título, descripción, keywords
+- ✅ **Open Graph**: Para redes sociales
+- ✅ **Schema.org**: Datos estructurados para barbería
+- ✅ **Sitemap**: Mapa del sitio XML
+- ✅ **Robots.txt**: Directivas para crawlers
+
+### **Conversión**
+- ✅ **CTA prominente**: Botón "Reservar ahora" visible
+- ✅ **WhatsApp**: Enlace directo para contacto
+- ✅ **Información clara**: Servicios, horarios, ubicación
+- ✅ **Testimonios**: Prueba social básica
+- ✅ **FAQ**: Respuestas a objeciones comunes
+
+## 🔗 **Redirecciones**
+
+### **Flujo de Usuario**
+```
+www.buonapinta.cl (Landing)
+    ↓ [Botón "Reservar ahora"]
+reserva.buonapinta.cl/book (Sistema de Reservas)
+    ↓ [Formulario completo]
+reserva.buonapinta.cl/confirm (Confirmación)
+```
+
+### **URLs Configuradas**
+- **Landing**: `https://www.buonapinta.cl`
+- **Reservas**: `https://reserva.buonapinta.cl/book`
 - **WhatsApp**: `https://wa.me/569XXXXXXXX`
 
-## 📱 Responsive Design
+## 🛠️ **Desarrollo Local**
 
-- **Mobile-first**: Optimizado para dispositivos móviles
-- **Breakpoints**: 768px para tablets y desktop
-- **Touch-friendly**: Botones y enlaces optimizados para touch
+### **Prerrequisitos**
+- Node.js 18+ (opcional, para linting)
+- Python 3 (para servidor local)
 
-## 🎨 Estilos
+### **Instalación**
+```bash
+# Clonar repositorio
+git clone https://github.com/tomasgomez/buonapinta-landing.git
+cd buonapinta-landing
 
-### Colores
-- **Ocean Aqua**: #20B2AA (accent color)
-- **Sunset Coral**: #FF6F61 (CTA buttons)
-- **Text Dark**: #333333 (headings)
-- **Text Light**: #666666 (body text)
+# Instalar dependencias (opcional)
+npm install
 
-### Tipografías
-- **Montserrat**: Headings y CTAs
-- **Lato**: Body text y contenido
-
-## 🚀 Despliegue
-
-### Opción 1: Hosting Estático (Recomendado)
-1. **Netlify**: Arrastra la carpeta al dashboard
-2. **Vercel**: Conecta con GitHub
-3. **GitHub Pages**: Push a branch gh-pages
-4. **Cloudflare Pages**: Upload files
-
-### Opción 2: Hosting Tradicional
-1. Sube todos los archivos al directorio raíz del dominio
-2. Configura el .htaccess para Apache
-3. Verifica que robots.txt y sitemap.xml estén accesibles
-
-### Opción 3: CDN
-1. Sube a AWS S3 + CloudFront
-2. Configura el dominio personalizado
-3. Habilita HTTPS
-
-## ⚙️ Configuración DNS
-
-### Estructura Recomendada
-```
-www.buonapinta.cl     → Landing page estática (este proyecto)
-app.buonapinta.cl     → Aplicación de reservas (proyecto principal)
-api.buonapinta.cl     → API backend (opcional)
+# Servidor local con Python
+npm run dev
+# o
+python3 -m http.server 8000
 ```
 
-### Configuración
-1. **A Record**: `www.buonapinta.cl` → IP del hosting estático
-2. **CNAME**: `app.buonapinta.cl` → Render/Vercel del proyecto principal
-3. **CNAME**: `api.buonapinta.cl` → Backend API (opcional)
+### **Scripts Disponibles**
+```bash
+npm run dev          # Servidor local (Python)
+npm run lint         # Linting completo
+npm run lint:html    # Solo HTML
+npm run lint:css     # Solo CSS
+npm run lint:fix     # Auto-fix CSS
+```
 
-## 🔧 Personalización
+## 📊 **Métricas y Analytics**
 
-### Actualizar Información de Contacto
-1. Edita `index.html`
-2. Cambia `569XXXXXXXX` por el número real
-3. Actualiza la URL de Google Maps si es necesario
-
-### Actualizar Precios
-1. Edita la sección "Servicios" en `index.html`
-2. Actualiza los precios en el Schema.org JSON-LD
-
-### Agregar Imagen OG
-1. Sube `og-buonapinta.jpg` (1200x630px) a la carpeta
-2. Actualiza las meta tags en `index.html`
-
-## 📊 Analytics (Opcional)
-
-Para agregar Google Analytics:
-
+### **Google Analytics** (Configurar)
 ```html
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -127,39 +127,132 @@ Para agregar Google Analytics:
 </script>
 ```
 
-## 🔍 Verificación
+### **Eventos de Conversión**
+- Clic en "Reservar ahora"
+- Clic en WhatsApp
+- Tiempo en página
+- Scroll depth
 
-### Herramientas de SEO
-- **Google Search Console**: Verificar indexación
-- **PageSpeed Insights**: Medir performance
-- **Rich Results Test**: Validar Schema.org
-- **Mobile-Friendly Test**: Verificar responsive
+## 🎯 **Optimizaciones**
 
-### Checklist Pre-Despliegue
-- [ ] Todos los enlaces funcionan
-- [ ] Imagen OG configurada
-- [ ] Número de WhatsApp actualizado
-- [ ] Schema.org validado
-- [ ] Mobile responsive verificado
-- [ ] Performance optimizado
+### **Performance**
+- ✅ **CSS minificado**: Estilos optimizados
+- ✅ **Imágenes optimizadas**: Formatos modernos
+- ✅ **Caching**: Headers de caché configurados
+- ✅ **Compresión**: Gzip habilitado
 
-## 📈 Monitoreo
+### **SEO**
+- ✅ **Título optimizado**: "Reserva tu corte en Concón | BUONA PINTA"
+- ✅ **Meta descripción**: 160 caracteres optimizados
+- ✅ **Keywords**: Barbería, Concón, reservas
+- ✅ **Schema.org**: Datos estructurados completos
 
-### Métricas Clave
-- **Tiempo de carga**: < 2 segundos
-- **Core Web Vitals**: LCP < 2.5s, FID < 100ms, CLS < 0.1
-- **Conversión**: Clics en "Reservar ahora"
-- **SEO**: Posición en búsquedas "barbería Concón"
+### **UX**
+- ✅ **Loading rápido**: < 3 segundos
+- ✅ **Mobile-first**: Diseño responsive
+- ✅ **Accesibilidad**: WCAG 2.1 AA
+- ✅ **Navegación clara**: Flujo de conversión optimizado
 
-## 🆘 Soporte
+## 🔧 **Configuración DNS**
 
-Para actualizaciones o cambios:
-1. Edita los archivos HTML/CSS
-2. Prueba localmente abriendo `index.html`
-3. Sube los cambios al hosting
-4. Verifica que todo funcione correctamente
+### **Cloudflare** (Recomendado)
+```
+Tipo    Nombre                    Valor
+A       www.buonapinta.cl         IP_DEL_LANDING
+CNAME   buonapinta.cl             www.buonapinta.cl
+CNAME   reserva.buonapinta.cl     IP_DEL_SISTEMA_RESERVAS
+```
+
+### **Verificación**
+- ✅ `www.buonapinta.cl` → Landing estático
+- ✅ `reserva.buonapinta.cl` → Sistema de reservas
+- ✅ SSL habilitado
+- ✅ Redirección HTTP → HTTPS
+
+## 📱 **Responsive Design**
+
+### **Breakpoints**
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+### **Características**
+- ✅ **Mobile-first**: Diseño desde móvil
+- ✅ **Touch-friendly**: Botones grandes
+- ✅ **Legible**: Tipografía optimizada
+- ✅ **Navegable**: Menú accesible
+
+## 🎨 **Personalización**
+
+### **Colores Corporativos**
+```css
+--ocean-aqua: #20B2AA    /* Azul turquesa */
+--sunset-coral: #FF6F61  /* Naranja coral */
+--text-dark: #333333     /* Texto principal */
+--text-light: #666666    /* Texto secundario */
+```
+
+### **Tipografías**
+- **Montserrat**: Títulos y encabezados
+- **Lato**: Texto del cuerpo
+
+### **Iconos**
+- **Font Awesome**: Iconos sociales y de interfaz
+
+## 🚀 **Despliegue en Render.com**
+
+### **Configuración**
+1. **Crear Static Site**
+2. **Conectar repositorio**: `tomasgomez/buonapinta-landing`
+3. **Build Command**: `echo "Static site - no build needed"`
+4. **Publish Directory**: `.`
+5. **Environment**: Static
+
+### **Variables de Entorno**
+```bash
+# No se requieren variables de entorno para sitio estático
+```
+
+### **Dominio Personalizado**
+1. **Configurar DNS**: Apuntar a Render
+2. **SSL**: Automático con Let's Encrypt
+3. **Redirección**: HTTP → HTTPS automática
+
+## 📈 **Monitoreo**
+
+### **Herramientas Recomendadas**
+- **Google Analytics**: Tráfico y conversiones
+- **Google Search Console**: SEO y indexación
+- **PageSpeed Insights**: Performance
+- **GTmetrix**: Análisis de velocidad
+
+### **Métricas Clave**
+- **Tiempo de carga**: < 3 segundos
+- **Tasa de rebote**: < 60%
+- **Conversión**: > 5% (clic en reservar)
+- **Core Web Vitals**: Verde
+
+## 🔄 **Actualizaciones**
+
+### **Proceso de Deploy**
+1. **Editar archivos** localmente
+2. **Commit y push** a GitHub
+3. **Render** despliega automáticamente
+4. **Verificar** funcionamiento
+
+### **Versionado**
+- **Git tags** para versiones
+- **Changelog** en README
+- **Backup** antes de cambios grandes
+
+## 📞 **Soporte**
+
+Para soporte técnico o preguntas sobre el landing:
+
+- **Issues**: [GitHub Issues](https://github.com/tomasgomez/buonapinta-landing/issues)
+- **Documentación**: Este README
+- **Desarrollo**: Ver commits en Git
 
 ---
 
-**¡El landing page está listo para convertir visitantes en clientes!** 🎉
-
+**El landing estático está optimizado para conversión y listo para producción.** 🚀✨
