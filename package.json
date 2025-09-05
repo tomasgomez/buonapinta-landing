@@ -4,9 +4,10 @@
   "description": "Landing page estática para BUONA PINTA Barber Truck",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static site - no build needed'",
+    "build": "ts-node src/build.ts",
     "start": "echo 'Static site - serve index.html'",
-    "dev": "python3 -m http.server 8000",
+    "dev": "ts-node src/build.ts && python3 -m http.server 8000",
+    "preview": "python3 -m http.server 8000",
     "lint": "npm run lint:html && npm run lint:css",
     "lint:html": "htmlhint *.html",
     "lint:css": "stylelint styles/*.css",
@@ -27,8 +28,11 @@
   },
   "homepage": "https://www.buonapinta.cl",
   "devDependencies": {
+    "@types/node": "^20.0.0",
     "htmlhint": "^1.6.3",
     "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0"
+    "stylelint-config-standard": "^39.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }
