@@ -26,8 +26,9 @@ body {
 /* Layout base */
 .container { 
     max-width: 1120px; 
-    margin-inline: auto; 
-    padding: 24px; 
+    margin: 0 auto; 
+    padding: 0 24px; 
+    width: 100%;
 }
 
 .section { 
@@ -51,6 +52,7 @@ body {
     background: var(--white-bg);
     border-bottom: 1px solid var(--border-light);
     padding: 16px 0;
+    text-align: center;
 }
 
 .header h1 {
@@ -66,6 +68,7 @@ body {
     margin: 4px 0 0 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -177,6 +180,70 @@ body {
     }
 }
 
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-card {
+    background: var(--white-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 12px 0;
+}
+
+.service-duration {
+    color: var(--text-light);
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.service-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--sunset-coral);
+    margin: 0 0 12px 0;
+}
+
+.service-description {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* Cards & misc */
 .card { 
     border: 1px solid #eaeaea; 
@@ -281,8 +348,42 @@ details p {
         padding: 32px 0;
     }
     
+    .header {
+        text-align: center;
+    }
+    
+    .header .tagline {
+        justify-content: center;
+    }
+    
     .hero {
         padding: 48px 0 32px;
+    }
+    
+    .cta-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .service-card {
+        padding: 20px;
     }
     
     .cta-row {
