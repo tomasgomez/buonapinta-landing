@@ -86,7 +86,9 @@ body {
 }
 
 .btn { 
-    display: inline-block; 
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
     padding: 12px 18px; 
     border-radius: 12px; 
     border: 1px solid #111; 
@@ -101,6 +103,10 @@ body {
     background: var(--sunset-coral); 
     color: white; 
     border-color: var(--sunset-coral);
+}
+
+.btn i {
+    font-size: 18px;
 }
 
 .btn:hover { 
