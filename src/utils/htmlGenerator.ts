@@ -5,6 +5,7 @@ import { createServicesHTML } from '../components/Services';
 import { createBarbersHTML } from '../components/Barbers';
 import { createScheduleHTML } from '../components/Schedule';
 import { createFooterHTML } from '../components/Footer';
+import { createStickyCTA } from '../components/StickyCTA';
 import { SERVICES, SITE_NAME, SITE_DESCRIPTION, CONTACT_INFO } from './config';
 
 export function generateHTML(): string {
@@ -45,23 +46,24 @@ export function generateHTML(): string {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva tu corte en Concón | ${SITE_NAME} Barber Truck</title>
-    <meta name="description" content="${SITE_DESCRIPTION}">
-    <meta name="keywords" content="barbería, corte de pelo, Concón, Valparaíso, barber truck, reserva online">
+    <meta name="description" content="Barber Truck en Concón. Cortes clásicos y modernos con barberos expertos. Reserva por WhatsApp en segundos.">
+    <meta name="keywords" content="barbería, corte de pelo, Concón, Valparaíso, barber truck, reserva online, whatsapp">
     <meta name="author" content="${SITE_NAME}">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.buonapinta.cl/">
-    <meta property="og:title" content="Reserva tu corte en Concón | ${SITE_NAME}">
-    <meta property="og:description" content="${SITE_DESCRIPTION}">
+    <meta property="og:title" content="Buona Pinta Barber Truck">
+    <meta property="og:description" content="Barber Truck en Concón. Reserva por WhatsApp en segundos.">
     <meta property="og:image" content="https://www.buonapinta.cl/favicon.png">
+    <meta property="og:locale" content="es_CL">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.buonapinta.cl/">
-    <meta property="twitter:title" content="Reserva tu corte en Concón | ${SITE_NAME}">
-    <meta property="twitter:description" content="${SITE_DESCRIPTION}">
+    <meta property="twitter:title" content="Buona Pinta Barber Truck">
+    <meta property="twitter:description" content="Barber Truck en Concón. Reserva por WhatsApp en segundos.">
     <meta property="twitter:image" content="https://www.buonapinta.cl/favicon.png">
     
     <!-- Favicon -->
@@ -89,6 +91,7 @@ export function generateHTML(): string {
         ${createBarbersHTML()}
         ${createScheduleHTML()}
         ${createFooterHTML()}
+        ${createStickyCTA()}
         
         <!-- JSON-LD Schema.org para bots -->
         <script type="application/ld+json">

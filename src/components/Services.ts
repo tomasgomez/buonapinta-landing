@@ -1,23 +1,23 @@
 import { SERVICES, getReserveHref } from '../utils/config';
 
 export function createServicesHTML(): string {
-  const servicesList = SERVICES.map(service => `
-    <div class="service-card">
-      <h3>${service.name}</h3>
-      <p class="service-duration">${service.duration} minutos</p>
-      <p class="service-price">$${service.price.toLocaleString()}</p>
-      <p class="service-description">${service.description}</p>
+  const items = SERVICES.map(s => `
+    <article class="card service-card">
+      <h3>${s.name}</h3>
+      <div class="meta">
+        <span>${s.duration} min</span>
+        <span class="price">$${s.price.toLocaleString('es-CL')}</span>
+      </div>
+      <p class="desc">${s.description}</p>
       <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
-    </div>
+    </article>
   `).join('');
 
   return `
-    <section class="section">
-      <div class="container">
+    <section class="section" id="servicios">
+      <div class="container ta-center">
         <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-          ${servicesList}
-        </div>
+        <div class="grid-cards">${items}</div>
       </div>
     </section>
   `;

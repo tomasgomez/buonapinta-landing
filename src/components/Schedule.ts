@@ -1,24 +1,22 @@
 import { SCHEDULE, CONTACT_INFO, LOCATION } from '../utils/config';
 
 export function createScheduleHTML(): string {
-  const scheduleList = SCHEDULE.map(day => `
-    <div class="schedule-item">
-      <span class="day">${day.day}:</span>
-      <span class="hours ${day.isOpen ? 'open' : 'closed'}">${day.hours}</span>
+  const rows = SCHEDULE.map(day => `
+    <div class="schedule-row">
+      <span class="day">${day.day}</span>
+      <span class="hour">${day.hours}</span>
     </div>
   `).join('');
 
   return `
-    <section class="section">
-      <div class="container grid grid-2">
-        <div>
-          <h2>Horarios</h2>
-          <div class="schedule-list">
-            ${scheduleList}
-          </div>
+    <section class="section" id="horarios">
+      <div class="container ta-center">
+        <h2>Horarios</h2>
+        <div class="schedule-grid">
+          ${rows}
         </div>
-        <div>
-          <h2>Ubicación</h2>
+        <div class="mt-16">
+          <h3>Ubicación</h3>
           <p>${LOCATION.city}, ${LOCATION.region}</p>
           <p>
             <a class="link" href="https://maps.google.com/?q=BUONA%20PINTA%20Conc%C3%B3n" target="_blank" rel="noopener noreferrer">

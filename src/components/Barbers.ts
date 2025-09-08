@@ -1,22 +1,20 @@
 import { BARBERS, getReserveHref } from '../utils/config';
 
 export function createBarbersHTML(): string {
-  const barbersList = BARBERS.map(barber => `
-    <div class="barber-card">
-      <h3>${barber.name}</h3>
-      <p class="barber-specialty">${barber.specialty}</p>
-      <p class="barber-experience">${barber.experience}</p>
+  const items = BARBERS.map(b => `
+    <article class="card barber-card">
+      <h3>${b.name}</h3>
+      <div class="tags">${b.specialty}</div>
+      <div class="muted">${b.experience}</div>
       <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
-    </div>
+    </article>
   `).join('');
 
   return `
-    <section class="section">
-      <div class="container">
+    <section class="section" id="barberos">
+      <div class="container ta-center">
         <h2>Nuestros Barberos</h2>
-        <div class="barbers-grid">
-          ${barbersList}
-        </div>
+        <div class="barbers-grid">${items}</div>
       </div>
     </section>
   `;
