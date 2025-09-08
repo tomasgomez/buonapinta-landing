@@ -1,4 +1,4 @@
-import { SERVICES } from '../utils/config';
+import { SERVICES, getReserveHref } from '../utils/config';
 
 export function createServicesHTML(): string {
   const servicesList = SERVICES.map(service => `
@@ -7,6 +7,7 @@ export function createServicesHTML(): string {
       <p class="service-duration">${service.duration} minutos</p>
       <p class="service-price">$${service.price.toLocaleString()}</p>
       <p class="service-description">${service.description}</p>
+      <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </div>
   `).join('');
 

@@ -1,4 +1,4 @@
-import { BOOKING_URL, CONTACT_INFO, SITE_DESCRIPTION } from '../utils/config';
+import { getReserveHref, WHATSAPP_URL, SITE_DESCRIPTION } from '../utils/config';
 
 export function createHeroHTML(): string {
   return `
@@ -8,19 +8,21 @@ export function createHeroHTML(): string {
         <h1>Reserva con nosotros</h1>
         <p class="sub">${SITE_DESCRIPTION}</p>
         <div class="cta-row">
-          <a href="${BOOKING_URL}" class="btn btn-primary">Reservar ahora</a>
+          <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Reservar por WhatsApp</a>
           <a
-            href="https://wa.me/${CONTACT_INFO.whatsapp}?text=Hola%20quiero%20reservar%20una%20hora%20en%20BUONA%20PINTA"
+            href="${WHATSAPP_URL}"
+            target="_blank"
+            rel="noopener noreferrer"
             class="btn"
-            aria-label="Reservar por WhatsApp"
+            aria-label="Escribir por WhatsApp"
           >
-            <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
           </a>
         </div>
         <ul class="benefits">
-          <li>✅ Reserva en 3 pasos</li>
-          <li>✅ Confirmación por email</li>
-          <li>✅ Horarios extendidos</li>
+          <li>✅ Atención personalizada por WhatsApp</li>
+          <li>✅ Confirmación rápida</li>
+          <li>✅ Mismos horarios y servicios</li>
         </ul>
       </div>
     </section>

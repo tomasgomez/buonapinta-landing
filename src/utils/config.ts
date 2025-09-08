@@ -85,6 +85,31 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const BOOKING_URL = 'https://reserva.buonapinta.cl/book';
+export const WHATSAPP_URL = 'https://wa.me/56956591265';
 export const SITE_NAME = 'BUONA PINTA';
 export const SITE_TAGLINE = 'Barber Truck en Concón';
 export const SITE_DESCRIPTION = 'Cortes clásicos y modernos con barberos expertos. Agenda en 3 pasos y recibe confirmación por email.';
+
+//////////////// NUEVO BLOQUE ////////////////
+/**
+ * Modo temporal para que TODAS las llamadas a la acción apunten a WhatsApp.
+ * Poner en 'whatsapp' mientras el sistema de reservas está en mantención.
+ * Valores válidos: 'whatsapp' | 'booking'
+ */
+export const CTA_TARGET_MODE: 'whatsapp' | 'booking' = 'whatsapp';
+
+// Mensaje por defecto que aparecerá en el chat de WhatsApp
+export const WHATSAPP_DEFAULT_MESSAGE = encodeURIComponent(
+  '¡Hola! Quiero reservar una hora en Buona Pinta. ¿Me ayudas?'
+);
+
+// Helper canónico para construir el HREF de cualquier CTA de reserva
+export function getReserveHref() {
+  if (CTA_TARGET_MODE === 'whatsapp') {
+    // Usa tu número oficial:
+    // Si existe un query ?utm_source=site, se mantiene para analytics simples
+    return `${WHATSAPP_URL}?text=${WHATSAPP_DEFAULT_MESSAGE}`;
+  }
+  return BOOKING_URL;
+}
+///////////////////////////////////////////////

@@ -1,4 +1,4 @@
-import { BARBERS } from '../utils/config';
+import { BARBERS, getReserveHref } from '../utils/config';
 
 export function createBarbersHTML(): string {
   const barbersList = BARBERS.map(barber => `
@@ -6,6 +6,7 @@ export function createBarbersHTML(): string {
       <h3>${barber.name}</h3>
       <p class="barber-specialty">${barber.specialty}</p>
       <p class="barber-experience">${barber.experience}</p>
+      <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </div>
   `).join('');
 

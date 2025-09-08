@@ -434,6 +434,41 @@ details p {
     font-size: 18px;
 }
 
+/* Notice banner */
+.notice { 
+    background: #fff3cd; 
+    color: #7a5a00; 
+    padding: 10px 0; 
+    border-bottom: 1px solid #ffe8a1; 
+}
+
+.notice .link { 
+    margin-left: 8px; 
+    text-decoration: underline; 
+    color: #7a5a00;
+}
+
+.notice .link:hover {
+    color: #5a4200;
+}
+
+/* Header row layout */
+.header-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.sm-hidden { 
+    display: none; 
+}
+
+@media (min-width: 768px) { 
+    .sm-hidden { 
+        display: inline-flex; 
+    } 
+}
+
 /* Print styles */
 @media print {
     .btn {

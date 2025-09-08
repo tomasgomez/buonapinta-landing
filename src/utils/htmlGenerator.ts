@@ -1,4 +1,5 @@
 import { createHeaderHTML } from '../components/Header';
+import { createNoticeHTML } from '../components/Notice';
 import { createHeroHTML } from '../components/Hero';
 import { createServicesHTML } from '../components/Services';
 import { createBarbersHTML } from '../components/Barbers';
@@ -82,6 +83,7 @@ export function generateHTML(): string {
 <body>
     <main>
         ${createHeaderHTML()}
+        ${createNoticeHTML()}
         ${createHeroHTML()}
         ${createServicesHTML()}
         ${createBarbersHTML()}
