@@ -15,17 +15,11 @@ export function createScheduleHTML(): string {
         <div class="schedule-grid">
           ${rows}
         </div>
-        <div class="mt-16">
+        <div class="location">
           <h3>Ubicación</h3>
-          <p>${LOCATION.city}, ${LOCATION.region}</p>
-          <p>
-            <a class="link" href="https://maps.google.com/?q=BUONA%20PINTA%20Conc%C3%B3n" target="_blank" rel="noopener noreferrer">
-              Ver en Google Maps
-            </a>
-          </p>
-          <p>
-            <a class="link" href="tel:${CONTACT_INFO.phone}">${CONTACT_INFO.phone}</a>
-          </p>
+          <p>Concón, Valparaíso <span class="badge">🎾 Dentro de Padel Montemar</span></p>
+          <p><a href="https://maps.app.goo.gl/nRKx2bDSank2ctAE7" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a></p>
+          <p><a href="tel:+56956591265">+56 9 5659 1265</a></p>
         </div>
       </div>
     </section>

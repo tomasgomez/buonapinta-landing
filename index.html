@@ -76,14 +76,20 @@
         <h1>Buona Pinta Barber Truck</h1>
         <p class="subhead">Cortes clásicos y modernos con barberos expertos.</p>
         <div class="ctas">
-          <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Reservar por WhatsApp</a>
-          <a href="https://wa.me/56956591265" target="_blank" rel="noopener noreferrer" class="btn">Escribir por WhatsApp</a>
+          <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Reservar por WhatsApp
+          </a>
+          <a href="https://wa.me/56956591265" target="_blank" rel="noopener noreferrer" class="btn">
+            Escribir por WhatsApp
+          </a>
         </div>
-        <ul class="features">
-          <li>✅ Atención rápida</li>
-          <li>✅ Confirmación por WhatsApp</li>
-          <li>✅ Horarios extendidos</li>
-        </ul>
+
+        <!-- Reemplazo de <ul> por feature pills -->
+        <div class="feature-pills" aria-label="Beneficios">
+          <span class="pill">✅ Atención rápida</span>
+          <span class="pill">✅ Confirmación por WhatsApp</span>
+          <span class="pill">✅ Horarios extendidos</span>
+        </div>
       </div>
     </section>
   
@@ -118,7 +124,7 @@
         <span>30 min</span>
         <span class="price">$8.000</span>
       </div>
-      <p class="desc">Afeitado tradicional con toalla caliente</p>
+      <p class="desc">Afeitado tradicional</p>
       <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </article>
   </div>
@@ -131,23 +137,23 @@
         <h2>Nuestros Barberos</h2>
         <div class="barbers-grid">
     <article class="card barber-card">
+      <img src="/images/barber-placeholder.svg" alt="Barbero Arsen" class="barber-photo" loading="lazy" decoding="async" />
       <h3>Arsen</h3>
       <div class="tags">Cortes Clásicos</div>
-      <div class="muted">5+ años</div>
       <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </article>
   
     <article class="card barber-card">
+      <img src="/images/barber-placeholder.svg" alt="Barbero Camilo" class="barber-photo" loading="lazy" decoding="async" />
       <h3>Camilo</h3>
       <div class="tags">Estilos Modernos</div>
-      <div class="muted">3+ años</div>
       <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </article>
   
     <article class="card barber-card">
+      <img src="/images/barber-placeholder.svg" alt="Barbero Cualquiera" class="barber-photo" loading="lazy" decoding="async" />
       <h3>Cualquiera</h3>
       <div class="tags">Barba y Bigote</div>
-      <div class="muted">4+ años</div>
       <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </article>
   </div>
@@ -196,17 +202,11 @@
     </div>
   
         </div>
-        <div class="mt-16">
+        <div class="location">
           <h3>Ubicación</h3>
-          <p>Concón, Valparaíso</p>
-          <p>
-            <a class="link" href="https://maps.google.com/?q=BUONA%20PINTA%20Conc%C3%B3n" target="_blank" rel="noopener noreferrer">
-              Ver en Google Maps
-            </a>
-          </p>
-          <p>
-            <a class="link" href="tel:+56 9 5659 1265">+56 9 5659 1265</a>
-          </p>
+          <p>Concón, Valparaíso <span class="badge">🎾 Dentro de Padel Montemar</span></p>
+          <p><a href="https://maps.app.goo.gl/nRKx2bDSank2ctAE7" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a></p>
+          <p><a href="tel:+56956591265">+56 9 5659 1265</a></p>
         </div>
       </div>
     </section>
@@ -228,11 +228,6 @@
         </div>
       </div>
     </footer>
-  
-        
-    <div class="sticky-cta" role="region" aria-label="Acción rápida">
-      <a href="https://wa.me/56956591265?text=%C2%A1Hola!%20Quiero%20reservar%20una%20hora%20en%20Buona%20Pinta.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Reservar por WhatsApp</a>
-    </div>
   
         
         <!-- JSON-LD Schema.org para bots -->

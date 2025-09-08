@@ -20,7 +20,7 @@ export const SERVICES: Service[] = [
     name: 'Afeitado Relax',
     duration: 30,
     price: 8000,
-    description: 'Afeitado tradicional con toalla caliente'
+    description: 'Afeitado tradicional'
   }
 ];
 

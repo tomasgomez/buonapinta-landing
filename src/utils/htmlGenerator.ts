@@ -5,7 +5,6 @@ import { createServicesHTML } from '../components/Services';
 import { createBarbersHTML } from '../components/Barbers';
 import { createScheduleHTML } from '../components/Schedule';
 import { createFooterHTML } from '../components/Footer';
-import { createStickyCTA } from '../components/StickyCTA';
 import { SERVICES, SITE_NAME, SITE_DESCRIPTION, CONTACT_INFO } from './config';
 
 export function generateHTML(): string {
@@ -91,7 +90,6 @@ export function generateHTML(): string {
         ${createBarbersHTML()}
         ${createScheduleHTML()}
         ${createFooterHTML()}
-        ${createStickyCTA()}
         
         <!-- JSON-LD Schema.org para bots -->
         <script type="application/ld+json">

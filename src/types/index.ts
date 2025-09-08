@@ -11,6 +11,7 @@ export interface Barber {
   name: string;
   specialty: string;
   experience: string;
+  photo?: string;
 }
 
 export interface ContactInfo {

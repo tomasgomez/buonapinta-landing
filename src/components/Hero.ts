@@ -8,14 +8,20 @@ export function createHeroHTML(): string {
         <h1>Buona Pinta Barber Truck</h1>
         <p class="subhead">Cortes clásicos y modernos con barberos expertos.</p>
         <div class="ctas">
-          <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Reservar por WhatsApp</a>
-          <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer" class="btn">Escribir por WhatsApp</a>
+          <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Reservar por WhatsApp
+          </a>
+          <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer" class="btn">
+            Escribir por WhatsApp
+          </a>
         </div>
-        <ul class="features">
-          <li>✅ Atención rápida</li>
-          <li>✅ Confirmación por WhatsApp</li>
-          <li>✅ Horarios extendidos</li>
-        </ul>
+
+        <!-- Reemplazo de <ul> por feature pills -->
+        <div class="feature-pills" aria-label="Beneficios">
+          <span class="pill">✅ Atención rápida</span>
+          <span class="pill">✅ Confirmación por WhatsApp</span>
+          <span class="pill">✅ Horarios extendidos</span>
+        </div>
       </div>
     </section>
   `;
