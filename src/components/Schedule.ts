@@ -1,7 +1,13 @@
 import { SCHEDULE, CONTACT_INFO, LOCATION } from '../utils/config';
 
 export function createScheduleHTML(): string {
-  const rows = SCHEDULE.map(day => `
+  // Ordenar días de la semana correctamente
+  const dayOrder = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  const sortedSchedule = dayOrder.map(dayName => 
+    SCHEDULE.find(day => day.day === dayName)
+  ).filter((day): day is NonNullable<typeof day> => day !== undefined);
+  
+  const rows = sortedSchedule.map(day => `
     <div class="schedule-row">
       <span class="day">${day.day}</span>
       <span class="hour">${day.hours}</span>

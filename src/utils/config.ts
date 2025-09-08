@@ -28,26 +28,26 @@ export const BARBERS: Barber[] = [
   {
     id: 'arsen',
     name: 'Arsen',
-    specialty: 'Cortes Clásicos',
-    experience: '5+ años'
+    specialty: 'Cortes Estilosos',
+    experience: ''
   },
   {
     id: 'camilo',
     name: 'Camilo',
-    specialty: 'Estilos Modernos',
-    experience: '3+ años'
+    specialty: 'Cortes Estilosos',
+    experience: '6+ años'
   },
   {
     id: 'cualquiera',
     name: 'Cualquiera',
     specialty: 'Barba y Bigote',
-    experience: '4+ años'
+    experience: ''
   }
 ];
 
 export const CONTACT_INFO: ContactInfo = {
   phone: '+56 9 5659 1265',
-  email: 'info@buonapinta.cl',
+  email: 'hola@buonapinta.cl',
   instagram: '@buonapinta',
   whatsapp: '+56956591265'
 };
@@ -88,7 +88,7 @@ export const BOOKING_URL = 'https://reserva.buonapinta.cl/book';
 export const WHATSAPP_URL = 'https://wa.me/56956591265';
 export const SITE_NAME = 'BUONA PINTA';
 export const SITE_TAGLINE = 'Barber Truck en Concón';
-export const SITE_DESCRIPTION = 'Cortes clásicos y modernos con barberos expertos. Agenda en 3 pasos y recibe confirmación por email.';
+export const SITE_DESCRIPTION = 'Cortes clásicos y modernos con barberos expertos. Agenda en 1 paso.';
 
 //////////////// NUEVO BLOQUE ////////////////
 /**
