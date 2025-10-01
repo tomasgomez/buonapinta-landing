@@ -19,7 +19,7 @@ export function createBarbersHTML(): string {
     <article class="card barber-card">
       <img src="${b.photo || createBarberPlaceholder(b.name)}" alt="Barbero ${b.name}" class="barber-photo" loading="lazy" decoding="async" />
       <h3>${b.name}</h3>
-      <div class="tags">${b.specialty}</div>
+      ${b.experience ? `<div class="tags">${b.experience}</div>` : ''}
       <a href="${getReserveHref()}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar por WhatsApp</a>
     </article>
   `).join('');

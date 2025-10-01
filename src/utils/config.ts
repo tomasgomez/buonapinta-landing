@@ -29,7 +29,7 @@ export const BARBERS: Barber[] = [
     id: 'julian',
     name: 'Julian',
     specialty: 'Cortes Estilosos',
-    experience: ''
+    experience: '+5 años de experiencia'
   },
   {
     id: 'cualquiera',
