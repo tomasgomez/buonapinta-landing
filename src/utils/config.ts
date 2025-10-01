@@ -26,16 +26,10 @@ export const SERVICES: Service[] = [
 
 export const BARBERS: Barber[] = [
   {
-    id: 'arsen',
-    name: 'Arsen',
+    id: 'julian',
+    name: 'Julian',
     specialty: 'Cortes Estilosos',
     experience: ''
-  },
-  {
-    id: 'camilo',
-    name: 'Camilo',
-    specialty: 'Cortes Estilosos',
-    experience: '6+ años'
   },
   {
     id: 'cualquiera',
@@ -58,7 +52,7 @@ export const SCHEDULE: Schedule[] = [
   { day: 'Miércoles', hours: '11:00 - 19:00', isOpen: true },
   { day: 'Jueves', hours: '11:00 - 19:00', isOpen: true },
   { day: 'Viernes', hours: '11:00 - 19:00', isOpen: true },
-  { day: 'Sábado', hours: '11:00 - 19:00', isOpen: true },
+  { day: 'Sábado', hours: '11:00 - 16:00', isOpen: true },
   { day: 'Domingo', hours: 'Cerrado', isOpen: false }
 ];
 
