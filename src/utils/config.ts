@@ -3,21 +3,21 @@ import { Service, Barber, ContactInfo, Schedule, Location, SocialLink } from '..
 export const SERVICES: Service[] = [
   {
     id: 'haircut-classic',
-    name: 'Corte Clásico',
+    name: 'Corte Personalizado',
     duration: 45,
-    price: 13500,
+    price: 15000,
     description: 'Corte tradicional con técnicas clásicas de barbería'
   },
   {
     id: 'haircut-beard',
-    name: 'Corte & Barba',
+    name: 'Corte + Barba',
     duration: 60,
-    price: 17500,
+    price: 20000,
     description: 'Corte completo con arreglo de barba y bigote'
   },
   {
     id: 'shave-relax',
-    name: 'Afeitado Relax',
+    name: 'Barba',
     duration: 30,
     price: 8000,
     description: 'Afeitado tradicional'
