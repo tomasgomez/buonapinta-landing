@@ -40,10 +40,10 @@ export const BARBERS: Barber[] = [
 ];
 
 export const CONTACT_INFO: ContactInfo = {
-  phone: '+56 9 5659 1265',
+  phone: '+56 9 7286 5741',
   email: 'hola@buonapinta.cl',
   instagram: '@buonapinta',
-  whatsapp: '+56956591265'
+  whatsapp: '+56972865741'
 };
 
 export const SCHEDULE: Schedule[] = [
@@ -72,14 +72,14 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     platform: 'whatsapp',
-    url: 'https://wa.me/56956591265',
+    url: 'https://wa.me/56972865741',
     icon: 'fab fa-whatsapp',
     label: 'WhatsApp'
   }
 ];
 
 export const BOOKING_URL = 'https://reserva.buonapinta.cl/book';
-export const WHATSAPP_URL = 'https://wa.me/56956591265';
+export const WHATSAPP_URL = 'https://wa.me/56972865741';
 export const SITE_NAME = 'BUONA PINTA';
 export const SITE_TAGLINE = 'Barber Truck en Concón';
 export const SITE_DESCRIPTION = 'Cortes clásicos y modernos con barberos expertos. Agenda en 1 paso.';

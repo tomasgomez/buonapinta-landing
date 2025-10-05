@@ -44,7 +44,7 @@ buonapinta-landing/
 ### 2. Navegación y CTAs
 - **Botón Principal**: "Reservar ahora" → redirige a `reserva.buonapinta.cl/book`
 - **Botón Secundario**: "Reservar por WhatsApp" → enlace directo a WhatsApp
-- **Enlaces de Redes**: Instagram (@buonapinta) y WhatsApp (+56 9 5659 1265)
+- **Enlaces de Redes**: Instagram (@buonapinta) y WhatsApp (+56 9 7286 5741)
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -243,7 +243,7 @@ services:
 
 ### Redirecciones
 - **Botón Principal**: `https://reserva.buonapinta.cl/book`
-- **WhatsApp**: `https://wa.me/56956591265`
+- **WhatsApp**: `https://wa.me/56972865741`
 - **Instagram**: `https://instagram.com/buonapinta`
 
 ### Flujo de Usuario
@@ -312,9 +312,9 @@ services:
 ## 📞 Contacto y Soporte
 
 ### Información de Contacto
-- **WhatsApp**: +56 9 5659 1265
+- **WhatsApp**: +56 9 7286 5741
 - **Instagram**: @buonapinta
-- **Email**: info@buonapinta.cl
+- **Email**: hola@buonapinta.cl
 
 ### Soporte Técnico
 - **Desarrollador**: Tomas Gomez Molina

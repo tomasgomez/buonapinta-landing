@@ -25,7 +25,7 @@ export function createScheduleHTML(): string {
           <h3>Ubicación</h3>
           <p>Concón, Valparaíso <span class="badge">🎾 Dentro de Padel Montemar</span></p>
           <p><a href="https://maps.app.goo.gl/nRKx2bDSank2ctAE7" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a></p>
-          <p><a href="tel:+56956591265">+56 9 5659 1265</a></p>
+          <p><a href="tel:+56972865741">+56 9 7286 5741</a></p>
         </div>
       </div>
     </section>
